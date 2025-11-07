@@ -1,0 +1,21 @@
+main {
+    padding: 0% 10%;
+    text-align: center;
+}
+
+main p{
+    padding: 40px;
+}
+
+.sobre img {
+    width: 20%;
+}
+
+.card {
+    background: linear-gradient(135deg, #ffe4ec, #e6d4ff);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    padding: 20px;
+    width: 50%;
+}

@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffaf5;
+    color: #333;
+}
+
+/* HEADER COM GRADIENTE PASTEL */
+header {
+    background: linear-gradient(135deg, #ffd6f6, #d4e3ff, #b6f5e6);
+    color: #ffffff;
+    text-shadow: 2px 3px 5px #000;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    text-shadow: 0 0 10px #fff;
+}
+
+.material-symbols-outlined{
+    font-size: 30px;
+}
+
+main {
+    padding: 0% 10%;
+    text-align: center;
+}
+
+main p{
+    padding: 40px;
+}
+
+.sobre img {
+    width: 20%;
+}
+
+.card {
+    background: linear-gradient(135deg, #ffe4ec, #e6d4ff);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    padding: 20px;
+    width: 60%;
+}
+
+footer {
+    background: linear-gradient(135deg, #ffd6f6, #d4e3ff);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-shadow: 2px 3px 5px #000
+}
