@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Sabor } from '../../interfaces/sabor';
+import { SorvetesService } from '../../services/sorvetes.service';
 
 @Component({
   selector: 'app-sabores',
@@ -7,5 +9,24 @@ import { Component } from '@angular/core';
   styleUrl: './sabores.component.css'
 })
 export class SaboresComponent {
-  public nome:string = "Chocomenta"
+  
+  public sabores:Sabor[]=[];
+
+  constructor(private sorveteService:SorvetesService){}
+
+  ngOnInit():void{
+    this.buscarSabores();
+  }
+
+  buscarSabores():void{
+    this.sorveteService.getSabores().subscribe(
+      (dadosRecebidos)=>{
+        this.sabores = dadosRecebidos;
+      },
+      (erro)=>{
+        console.log("Deu erro aqui")
+      }
+    )
+  }
+
 }
