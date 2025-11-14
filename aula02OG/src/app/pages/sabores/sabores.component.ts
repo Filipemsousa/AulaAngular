@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { Sabor } from '../../interfaces/sabor';
 import { SorvetesService } from '../../services/sorvetes.service';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-sabores',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './sabores.component.html',
   styleUrl: './sabores.component.css'
 })

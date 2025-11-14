@@ -3,6 +3,11 @@ main {
     text-align: center;
 }
 
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
 main p{
     padding: 40px;
 }

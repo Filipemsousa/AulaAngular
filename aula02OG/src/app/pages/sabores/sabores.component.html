@@ -5,8 +5,14 @@
             <h3>Sabores Clássicos</h3>
             <p>Aqui você pode escrever os sabores disponíveis, como chocolate, morango, baunilha, napolitano e muito mais!</p>
             <div>
-                <h3>{{nome}}</h3>
-                <img src="img/chocomenta.png" alt="">
+                <ul>
+                    <li *ngFor="let s of sabores">
+                        Nome do sabor:{{s.nome}} | Tipo: {{s.tipo}}
+                        <span *ngIf="s.disponivel" style="color: green;">-Disponivel</span>
+                        <span *ngIf="!s.disponivel" style="color: red">-Indisponivel</span>
+                    </li>
+                </ul>
+                
             </div>
         </div>
     </section>
